@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+:root{
+    --cor0: #176e57;
+    --cor1: #115342;
+    --cor2: #064635;
+    --cor3: #09442c;
+    --cor4: #1a4c37;
+    --cor5: #0edb7f;
+
+    --fonte-padrao: 'monospace', sans-serif;
+    --fonte-destaque: 'London', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor3),var(--cor0), var(--cor4));
+}
+
+@font-face{
+    font-family: 'London';
+    src: url('fonts/OldLondon.ttf') format('truetype'),
+    url('fonts/Olondona.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    background-image: linear-gradient(to right, var(--cor3),var(--cor0), var(--cor4));
+    box-shadow: 10px 4px 10px #115342;
+    margin-top: 10px;
+    padding-bottom: 100px;
+    height: 240px;
+    right: auto;
+    min-width: 400px;
+    max-width: 2050px;
+    margin: auto;
+    border-width: 1px;
+
+}
+
+header > h1{
+    font-family: 'London', sans-serif;
+    text-align: center;
+    font-size: 65px;
+    padding-bottom: 10px;
+    color: white;
+    margin: auto;
+    
+}
+
+header > h2{
+    text-align: center;
+}
+
+header > img{
+    padding-top: 10px;
+}
+
+.escudo{
+    position: relative;
+    top: -6px;
+}
+
+.logosite{
+    display: flex;
+    margin-top: -20px;
+    margin: auto;
+    min-width: 80px;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 6px;
+}
+
+
+nav{
+    background-color: #09442c;
+    padding: 10px;
+    box-shadow: 0px 2px 3px rgba(24, 24, 24, 0.418);
+    bottom: -10px;
+}
+
+nav > .menu__itens >  a{
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition-duration: 5s;
+
+}
+
+nav > .menu__itens >  a:hover{
+    background-color: #176e57;
+    color: #176e57;
+}
+
+.menu__itens{
+    display: flex;
+    max-width: 400px;
+    gap: 8px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+a{
+    color: #0edb7f;
+}
+
+main{
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #09442c;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+article{
+    padding: 10px 16px;
+    
+}
+
+h1{
+    font-family: var(--fonte-destaque);
+    margin-top: 40px;
+    color: white;
+    font-size: 50px;
+}
+
+h2{
+    font-family: var(--fonte-destaque);
+    text-align: left;
+    color: white;
+    font-size: 40px;
+}
+
+h3{
+    font-family: var(--fonte-destaque);
+    text-align: left;
+    color: white;
+    font-size: 30px;
+}
+
+p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    padding: 10px 17px;
+    margin-top: 1px;
+}
+
+li{
+    font-family: var(--fonte-padrao);
+    color: rgb(255, 255, 255);
+}
+
+.img{
+    object-fit: none;
+    padding: 100px;
+    padding-top: 1px;
+    padding-left: 100px;
+    height: 665px;
+    width: 807px;
+}
+
+.hinoetitulos{
+    padding: 10px 16px;
+    font-size: 60px;
+    
+}
+
+.brasa{
+    padding: 20px;
+    margin: 1px;
+    right: auto;
+    border-radius: 25px;
+    height: 300px;
+    max-width: 445px;
+}
+
+.liberta{
+    padding: 20px;
+    margin: 1px;
+    right: auto;
+    border-radius: 25px;
+    height: 300px;
+    width: 445px;
+}
+
+.mundial{
+    padding: 20px;
+    margin: 1px;
+    right: auto;
+    border-radius: 25px;
+    height: 300px;
+    width: 445px;
+}
+
+.tech{
+    background-color: black;
+    margin-left: -28px;
+}
+
+footer{
+    background-color: #09442c;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    padding-left: 46px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.rodape{
+    margin: auto;
+    width: 100%;
+    left: 20px;
+    margin-left: -8px;
+}
+
+
+.paghino{
+    background-image: linear-gradient(to right, var(--cor3),var(--cor0), var(--cor4));
+    width: 100%;
+    margin-inline: auto;
+    height: 1850px; 
+}
+
+.paghino > h1{
+    font-family: 'London', sans-serif;
+    text-align: center;
+    font-size: 65px;
+    padding-bottom: 35px;
+    color: white;
+    margin: auto;
+    
+    
+}
+
+.paghino > p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.videohino{
+    margin-top: 24px;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 535px;
+}
+
+.pag02{
+    font-family: monospace, sans-serif;
+    color: white;
+    padding-inline: 20px;
+    font-size: 33px;
+}
+
+.videohist{
+    margin-top: 24px;
+    max-width: 620px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
