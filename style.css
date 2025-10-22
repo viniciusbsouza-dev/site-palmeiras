@@ -137,6 +137,7 @@ h1{
     margin-top: 40px;
     color: white;
     font-size: 50px;
+    font-weight: normal;
 }
 
 h2{
@@ -144,17 +145,13 @@ h2{
     text-align: left;
     color: white;
     font-size: 40px;
-}
-
-h3{
-    font-family: var(--fonte-destaque);
-    text-align: left;
-    color: white;
-    font-size: 30px;
+    font-weight: normal;
 }
 
 p{
     font-family: var(--fonte-padrao);
+    line-height: 2em;
+    text-indent: 30px;
     color: white;
     padding: 10px 17px;
     margin-top: 1px;
@@ -163,6 +160,7 @@ p{
 li{
     font-family: var(--fonte-padrao);
     color: rgb(255, 255, 255);
+    line-height: 2em;
 }
 
 .img{
@@ -234,8 +232,14 @@ footer{
 .paghino{
     background-image: linear-gradient(to right, var(--cor3),var(--cor0), var(--cor4));
     width: 100%;
-    margin-inline: auto;
-    height: 1850px; 
+    height: 2330px; 
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .paghino > h1{
@@ -250,18 +254,26 @@ footer{
 }
 
 .paghino > p{
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     text-align: center;
     color: white;
 }
 
-.videohino{
-    margin-top: 24px;
-    margin-inline: auto;
-    width: 100%;
-    max-width: 535px;
+div.videohino{
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 43%;
+    position: relative;
+}
+
+div.videohino iframe{
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    width: 82%;
+    height: 100%;
 }
 
 .pag02{
@@ -271,11 +283,19 @@ footer{
     font-size: 33px;
 }
 
-.videohist{
-    margin-top: 24px;
-    max-width: 620px;
+div.videohist{
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.videohist iframe{
+    position: absolute;
+    top: 5%;
+    left: -2%;
     width: 100%;
-    margin-inline: auto;
+    height: 100%;
 }
 
 
